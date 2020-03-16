@@ -1,0 +1,78 @@
+|Block1
+pin_name2 <= 74273:inst.Q1
+pin_name20 => 74273:inst.D2
+pin_name21 => 74273:inst.D3
+pin_name19 => 74273:inst.D1
+pin_name22 => 74273:inst.D4
+pin_name25 => 74273:inst.D7
+pin_name24 => 74273:inst.D6
+pin_name23 => 74273:inst.D5
+pin_name26 => 74273:inst.D8
+pin_name => inst28.IN0
+pin_name10 => 74138:inst12.A
+pin_name11 => 74138:inst12.B
+pin_name12 => 74138:inst12.C
+pin_name13 => 74138:inst12.G2AN
+pin_name15 => inst14.IN0
+pin_name14 => inst14.IN1
+pin_name3 <= 74273:inst.Q2
+pin_name4 <= 74273:inst.Q3
+pin_name5 <= 74273:inst.Q4
+pin_name6 <= 74273:inst.Q5
+pin_name7 <= 74273:inst.Q6
+pin_name8 <= 74273:inst.Q7
+pin_name9 <= 74273:inst.Q8
+
+
+|Block1|74273:inst
+Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 19.ACLR
+CLRN => 18.ACLR
+CLRN => 17.ACLR
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLRN => 12.ACLR
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+CLK => 12.CLK
+D1 => 19.DATAIN
+Q2 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 18.DATAIN
+Q3 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 17.DATAIN
+Q4 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D4 => 16.DATAIN
+Q5 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+D5 => 15.DATAIN
+Q6 <= 14.DB_MAX_OUTPUT_PORT_TYPE
+D6 => 14.DATAIN
+Q7 <= 13.DB_MAX_OUTPUT_PORT_TYPE
+D7 => 13.DATAIN
+Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
+D8 => 12.DATAIN
+
+
+|Block1|74138:inst12
+Y7N <= 22.DB_MAX_OUTPUT_PORT_TYPE
+G1 => 8.IN0
+G2BN => 1.IN1
+G2AN => 1.IN2
+B => 10.IN0
+A => 9.IN0
+C => 11.IN0
+Y6N <= 21.DB_MAX_OUTPUT_PORT_TYPE
+Y5N <= 20.DB_MAX_OUTPUT_PORT_TYPE
+Y4N <= 19.DB_MAX_OUTPUT_PORT_TYPE
+Y3N <= 18.DB_MAX_OUTPUT_PORT_TYPE
+Y2N <= 17.DB_MAX_OUTPUT_PORT_TYPE
+Y1N <= 16.DB_MAX_OUTPUT_PORT_TYPE
+Y0N <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+

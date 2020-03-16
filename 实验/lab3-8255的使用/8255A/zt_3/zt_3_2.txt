@@ -1,0 +1,59 @@
+//T8255-1.c
+//8255并口控制器应用实验  B口输入，A口输出
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <bios.h>
+#include <ctype.h>
+#include <process.h>
+
+void key(void);
+void delay(int time);
+
+//****************根据查看配置信息修改下列符号值*******************
+#define  IOY0         0x3000
+//*****************************************************************
+#define  MY8255_A     IOY0 + 0x00*2
+#define  MY8255_B     IOY0 + 0x01*2
+#define  MY8255_C     IOY0 + 0x02*2
+#define  MY8255_MODE  IOY0 + 0x03*2
+
+void main()
+{
+	char a;
+	char buf[9];
+	int b=0;
+	outp(MY8255_MODE, 0x90);
+	
+	while(1)
+	{
+		b+=1;
+		outp(MY8255_B, b);
+		a = inp(MY8255_A);
+		itoa(a,buf,2);
+		printf("%08s\n",buf);
+		delay(5000);
+		key();
+	}
+}
+
+void key(void)
+{
+	if (bioskey(1) != 0)
+	{
+		exit(0);
+	}
+}
+void delay(int time)
+{
+	int i;
+	for(i=0;i<time;i++)
+	{
+		int j;
+		for(j=0;j<0x5000;j++)
+		{
+			;
+		}
+	}
+}
